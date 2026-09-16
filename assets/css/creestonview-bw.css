@@ -1,8 +1,7 @@
 /* ==========================================================================
-   CREESTONVIEW - Complete Orange Removal & Red Accent Overrides
+   CREESTONVIEW - Master Red & Black Overrides & Orange Removal
    ========================================================================== */
 
-/* 1. Global CSS Variable Overrides */
 :root {
     --primary-color: #dc2626 !important;
     --secondary-color: #111111 !important;
@@ -13,7 +12,7 @@
     --wp--preset--color--vivid-red: #dc2626 !important;
 }
 
-/* 2. Logo Branding Container - Change Orange Box to Black */
+/* 1. Recuadro del Logotipo: Fondo a Negro (#000000) */
 .pxl-header-branding,
 .pxl-header-branding a,
 .pxl-header-branding-bg,
@@ -21,57 +20,127 @@
 .pxl-logo-mobile a,
 #pxl-header-mobile .pxl-header-branding,
 .pxl-header-mobile-default .pxl-header-branding,
-div[class*="branding"],
 .elementor-widget-pxl_logo,
 .pxl-logo,
 .pxl-header-branding-inner,
+div[class*="branding"],
+div[class*="pxl-logo"],
 .style-light .pxl-header-branding {
     background-color: #000000 !important;
     background: #000000 !important;
     border-color: #000000 !important;
 }
 
-.pxl-item--logo,
-.pxl-item--logo a {
+.pxl-header-branding img,
+.pxl-logo-mobile img,
+img[src*="logo.png"],
+img[src*="logo"] {
     background-color: transparent !important;
+    background: transparent !important;
+    filter: none !important;
 }
 
-/* 3. Slider / Portfolio Category Section Background - Change Big Orange Bar to Dark Gray/Black */
+/* 2 & 3. Botones "Cotizar Ahora" y "Consulta y Cotiza": Fondo Rojo (#dc2626) */
+.pxl-button a,
+.btn,
+.btn-default,
+.btn-primary,
+.elementor-button,
+.pxl-btn,
+.pxl-atc-link a,
+.elementor-widget-pxl_button a,
+.pxl--btn-text,
+a[href*="mailto"],
+a[class*="btn"],
+.pxl-button,
+.elementor-button-wrapper a {
+    background-color: #dc2626 !important;
+    background: #dc2626 !important;
+    border-color: #dc2626 !important;
+    color: #ffffff !important;
+}
+
+.pxl-button a:hover,
+.btn:hover,
+.btn-default:hover,
+.elementor-button:hover,
+a[href*="mailto"]:hover {
+    background-color: #b91c1c !important;
+    background: #b91c1c !important;
+    border-color: #b91c1c !important;
+    color: #ffffff !important;
+}
+
+/* 4. Fondo de las imágenes en carrusel: Fondo Oscuro (#111111) en lugar de Naranja */
 .categoria-proyectos,
 .pxl-tabs5,
 .pxl-tabs5 .pxl-tabs--content,
 .pxl-tabs5--inner,
 .pxl-tabs5::before,
 .pxl-tabs5::after,
+.pxl-swiper-container,
+.pxl-swiper-slider,
+.pxl-swiper-wrapper,
+.swiper-container,
+.swiper-wrapper,
+.swiper-slide,
 .elementor-element-a0a8b82,
 .elementor-element-0444157,
+.elementor-element-c223c27,
+.elementor-element-eb4becb,
 .elementor-section[data-id="0444157"],
 div[class*="categoria-proyectos"],
+div[class*="pxl-tabs"],
 .elementor-column[data-id="31d9eb4"],
 .elementor-column[data-id="eb4becb"] {
     background-color: #111111 !important;
     background: #111111 !important;
 }
 
-/* 4. Footer & Contact Icons - Replace Orange Icons with Red */
+/* 5. Iconos de dirección en pie de página (Ubicación, WhatsApp, Email): Color Rojo (#dc2626) */
 .pxl-icon-box .pxl-item--icon,
 .pxl-icon-box .pxl-item--icon i,
 .pxl-icon-box i,
 i.flaticon,
 i[class*="flaticon-"],
+.flaticon-email11,
 i.fa-map-marker-alt,
 i.fa-map-marker,
+i.fa-location-dot,
 i.fa-whatsapp,
 i.fa-envelope,
-.flaticon-email11,
 .pxl-item--icon i.fab,
 .pxl-item--icon i.fas,
-.pxl-item--icon i.far {
+.pxl-item--icon i.far,
+.pxl-footer i,
+footer i,
+.elementor-widget-pxl_icon_box i,
+.pxl-item--icon {
     color: #dc2626 !important;
     fill: #dc2626 !important;
 }
 
-/* 5. Scroll To Top Button (Bottom Right) */
+/* 6. Efecto del ratón (Cursor follower circle): Círculo Semitransparente Rojo */
+.pxl-cursor,
+#pxl-cursor,
+.pxl-cursor--follower,
+.pxl-js-follower,
+.pxl-cursor-follower,
+.pxl-cursor-pointer,
+.pxl-cursor-wrapper,
+div[class*="pxl-cursor"] {
+    background-color: rgba(220, 38, 38, 0.35) !important;
+    border-color: rgba(220, 38, 38, 0.7) !important;
+}
+
+.pxl-cursor--follower.active,
+.pxl-cursor.active,
+.pxl-cursor--cta {
+    background-color: rgba(220, 38, 38, 0.5) !important;
+    border-color: #dc2626 !important;
+}
+
+/* 7. Scroll To Top Button (Botón Flotante) */
 .pxl-scroll-top,
 #pxl-scroll-top,
 .pxl-scroll-top-wrap,
@@ -89,47 +158,27 @@ a.pxl-scroll-top,
     background-color: #b91c1c !important;
 }
 
-/* 6. Universal Orange Color Overrides (Catch-all for any element with orange background/border/color) */
-[style*="background-color: #ff"],
-[style*="background-color:#ff"],
-[style*="background-color: #ea"],
-[style*="background-color:#ea"],
-[style*="background-color: #f5"],
-[style*="background-color:#f5"],
-[style*="background-color: #e5"],
-[style*="background-color:#e5"],
-[style*="background-color: rgb(255"],
-[style*="background-color: rgb(234"],
-[style*="background: #ff"],
-[style*="background: #ea"],
-[style*="background: #f5"] {
-    background-color: #dc2626 !important;
-    background: #dc2626 !important;
+/* 8. Reglas de captura general para cualquier fondo o texto naranja restante */
+[style*="background-color: rgb(255, 105, 0)"],
+[style*="background-color: rgb(255, 94, 21)"],
+[style*="background-color: rgb(245, 91, 20)"],
+[style*="background-color: rgb(234, 87, 3)"],
+[style*="background-color: #ff6900"],
+[style*="background-color: #ff5e15"],
+[style*="background-color: #f55b14"],
+[style*="background-color: #ea5703"],
+[style*="background-color: #e55715"] {
+    background-color: #111111 !important;
 }
 
-[style*="color: #ff"],
-[style*="color:#ff"],
-[style*="color: #ea"],
-[style*="color:#ea"],
-[style*="color: #f5"],
-[style*="color:#f5"],
-[style*="color: rgb(255"],
-[style*="color: rgb(234"] {
+[style*="color: rgb(255, 105, 0)"],
+[style*="color: rgb(255, 94, 21)"],
+[style*="color: rgb(245, 91, 20)"],
+[style*="color: rgb(234, 87, 3)"],
+[style*="color: #ff6900"],
+[style*="color: #ff5e15"],
+[style*="color: #f55b14"],
+[style*="color: #ea5703"],
+[style*="color: #e55715"] {
     color: #dc2626 !important;
-}
-
-/* 7. Ensure clean contrast for all section texts */
-.pxl-heading .pxl-item--title,
-.pxl-heading .pxl-item--description,
-.pxl-counter-number,
-.pxl-item--number {
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-/* Clean logo display */
-img[src*="logo.png"],
-img[src*="logo"] {
-    background: transparent !important;
-    filter: none !important;
 }

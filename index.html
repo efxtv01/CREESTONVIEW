@@ -7182,6 +7182,194 @@
         integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
         data-cf-beacon='{"version":"2024.11.0","token":"d1ff2ec57d154338b2621af7c8062efa","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
         crossorigin="anonymous"></script>
+
+<style id="creestonview-master-overrides">
+/* ==========================================================================
+   CREESTONVIEW - Master Red & Black Overrides & Orange Removal
+   ========================================================================== */
+
+:root {
+    --primary-color: #dc2626 !important;
+    --secondary-color: #111111 !important;
+    --accent-color: #dc2626 !important;
+    --pxl-primary-color: #dc2626 !important;
+    --pxl-secondary-color: #111111 !important;
+    --wp--preset--color--luminous-vivid-orange: #dc2626 !important;
+    --wp--preset--color--vivid-red: #dc2626 !important;
+}
+
+/* 1. Recuadro del Logotipo: Fondo a Negro (#000000) */
+.pxl-header-branding,
+.pxl-header-branding a,
+.pxl-header-branding-bg,
+.pxl-logo-mobile,
+.pxl-logo-mobile a,
+#pxl-header-mobile .pxl-header-branding,
+.pxl-header-mobile-default .pxl-header-branding,
+.elementor-widget-pxl_logo,
+.pxl-logo,
+.pxl-header-branding-inner,
+div[class*="branding"],
+div[class*="pxl-logo"],
+.style-light .pxl-header-branding {
+    background-color: #000000 !important;
+    background: #000000 !important;
+    border-color: #000000 !important;
+}
+
+.pxl-header-branding img,
+.pxl-logo-mobile img,
+img[src*="logo.png"],
+img[src*="logo"] {
+    background-color: transparent !important;
+    background: transparent !important;
+    filter: none !important;
+}
+
+/* 2 & 3. Botones "Cotizar Ahora" y "Consulta y Cotiza": Fondo Rojo (#dc2626) */
+.pxl-button a,
+.btn,
+.btn-default,
+.btn-primary,
+.elementor-button,
+.pxl-btn,
+.pxl-atc-link a,
+.elementor-widget-pxl_button a,
+.pxl--btn-text,
+a[href*="mailto"],
+a[class*="btn"],
+.pxl-button,
+.elementor-button-wrapper a {
+    background-color: #dc2626 !important;
+    background: #dc2626 !important;
+    border-color: #dc2626 !important;
+    color: #ffffff !important;
+}
+
+.pxl-button a:hover,
+.btn:hover,
+.btn-default:hover,
+.elementor-button:hover,
+a[href*="mailto"]:hover {
+    background-color: #b91c1c !important;
+    background: #b91c1c !important;
+    border-color: #b91c1c !important;
+    color: #ffffff !important;
+}
+
+/* 4. Fondo de las imágenes en carrusel: Fondo Oscuro (#111111) en lugar de Naranja */
+.categoria-proyectos,
+.pxl-tabs5,
+.pxl-tabs5 .pxl-tabs--content,
+.pxl-tabs5--inner,
+.pxl-tabs5::before,
+.pxl-tabs5::after,
+.pxl-swiper-container,
+.pxl-swiper-slider,
+.pxl-swiper-wrapper,
+.swiper-container,
+.swiper-wrapper,
+.swiper-slide,
+.elementor-element-a0a8b82,
+.elementor-element-0444157,
+.elementor-element-c223c27,
+.elementor-element-eb4becb,
+.elementor-section[data-id="0444157"],
+div[class*="categoria-proyectos"],
+div[class*="pxl-tabs"],
+.elementor-column[data-id="31d9eb4"],
+.elementor-column[data-id="eb4becb"] {
+    background-color: #111111 !important;
+    background: #111111 !important;
+}
+
+/* 5. Iconos de dirección en pie de página (Ubicación, WhatsApp, Email): Color Rojo (#dc2626) */
+.pxl-icon-box .pxl-item--icon,
+.pxl-icon-box .pxl-item--icon i,
+.pxl-icon-box i,
+i.flaticon,
+i[class*="flaticon-"],
+.flaticon-email11,
+i.fa-map-marker-alt,
+i.fa-map-marker,
+i.fa-location-dot,
+i.fa-whatsapp,
+i.fa-envelope,
+.pxl-item--icon i.fab,
+.pxl-item--icon i.fas,
+.pxl-item--icon i.far,
+.pxl-footer i,
+footer i,
+.elementor-widget-pxl_icon_box i,
+.pxl-item--icon {
+    color: #dc2626 !important;
+    fill: #dc2626 !important;
+}
+
+/* 6. Efecto del ratón (Cursor follower circle): Círculo Semitransparente Rojo */
+.pxl-cursor,
+#pxl-cursor,
+.pxl-cursor--follower,
+.pxl-js-follower,
+.pxl-cursor-follower,
+.pxl-cursor-pointer,
+.pxl-cursor-wrapper,
+div[class*="pxl-cursor"] {
+    background-color: rgba(220, 38, 38, 0.35) !important;
+    border-color: rgba(220, 38, 38, 0.7) !important;
+}
+
+.pxl-cursor--follower.active,
+.pxl-cursor.active,
+.pxl-cursor--cta {
+    background-color: rgba(220, 38, 38, 0.5) !important;
+    border-color: #dc2626 !important;
+}
+
+/* 7. Scroll To Top Button (Botón Flotante) */
+.pxl-scroll-top,
+#pxl-scroll-top,
+.pxl-scroll-top-wrap,
+.pxl-scroll-top i,
+a.pxl-scroll-top,
+.pxl-scroll-top span {
+    background-color: #dc2626 !important;
+    background: #dc2626 !important;
+    border-color: #dc2626 !important;
+    color: #ffffff !important;
+}
+
+.pxl-scroll-top:hover,
+#pxl-scroll-top:hover {
+    background-color: #b91c1c !important;
+}
+
+/* 8. Reglas de captura general para cualquier fondo o texto naranja restante */
+[style*="background-color: rgb(255, 105, 0)"],
+[style*="background-color: rgb(255, 94, 21)"],
+[style*="background-color: rgb(245, 91, 20)"],
+[style*="background-color: rgb(234, 87, 3)"],
+[style*="background-color: #ff6900"],
+[style*="background-color: #ff5e15"],
+[style*="background-color: #f55b14"],
+[style*="background-color: #ea5703"],
+[style*="background-color: #e55715"] {
+    background-color: #111111 !important;
+}
+
+[style*="color: rgb(255, 105, 0)"],
+[style*="color: rgb(255, 94, 21)"],
+[style*="color: rgb(245, 91, 20)"],
+[style*="color: rgb(234, 87, 3)"],
+[style*="color: #ff6900"],
+[style*="color: #ff5e15"],
+[style*="color: #f55b14"],
+[style*="color: #ea5703"],
+[style*="color: #e55715"] {
+    color: #dc2626 !important;
+}
+
+</style>
 </body>
 
 </html>
