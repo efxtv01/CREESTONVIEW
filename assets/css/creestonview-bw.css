@@ -1,7 +1,8 @@
 /* ==========================================================================
-   CREESTONVIEW - Red & Black Theme Overrides
+   CREESTONVIEW - Complete Orange Removal & Red Accent Overrides
    ========================================================================== */
 
+/* 1. Global CSS Variable Overrides */
 :root {
     --primary-color: #dc2626 !important;
     --secondary-color: #111111 !important;
@@ -12,103 +13,123 @@
     --wp--preset--color--vivid-red: #dc2626 !important;
 }
 
-/* 1. Logo background box fix: Change orange box to BLACK */
+/* 2. Logo Branding Container - Change Orange Box to Black */
 .pxl-header-branding,
 .pxl-header-branding a,
+.pxl-header-branding-bg,
 .pxl-logo-mobile,
 .pxl-logo-mobile a,
-.pxl-header-branding-bg,
+#pxl-header-mobile .pxl-header-branding,
 .pxl-header-mobile-default .pxl-header-branding,
-div[class*="branding"] {
+div[class*="branding"],
+.elementor-widget-pxl_logo,
+.pxl-logo,
+.pxl-header-branding-inner,
+.style-light .pxl-header-branding {
     background-color: #000000 !important;
     background: #000000 !important;
+    border-color: #000000 !important;
 }
 
-/* 2. Replace all orange accents with Red (#dc2626) */
-a:hover,
-.pxl-primary-color,
-.text-primary,
-.pxl-item--icon i,
+.pxl-item--logo,
+.pxl-item--logo a {
+    background-color: transparent !important;
+}
+
+/* 3. Slider / Portfolio Category Section Background - Change Big Orange Bar to Dark Gray/Black */
+.categoria-proyectos,
+.pxl-tabs5,
+.pxl-tabs5 .pxl-tabs--content,
+.pxl-tabs5--inner,
+.pxl-tabs5::before,
+.pxl-tabs5::after,
+.elementor-element-a0a8b82,
+.elementor-element-0444157,
+.elementor-section[data-id="0444157"],
+div[class*="categoria-proyectos"],
+.elementor-column[data-id="31d9eb4"],
+.elementor-column[data-id="eb4becb"] {
+    background-color: #111111 !important;
+    background: #111111 !important;
+}
+
+/* 4. Footer & Contact Icons - Replace Orange Icons with Red */
+.pxl-icon-box .pxl-item--icon,
 .pxl-icon-box .pxl-item--icon i,
-.flaticon,
-[class*="flaticon-"],
-.fa-whatsapp,
-.elementor-icon i,
-.pxl-heading .pxl-item--subtitle,
-.pxl-heading .pxl-item--title span.pxl-primary-color,
-.pxl-counter-number,
-.pxl-item--number,
-.counter-number,
-.pxl-counter .pxl-item--number span,
-.pxl-counter-number span {
+.pxl-icon-box i,
+i.flaticon,
+i[class*="flaticon-"],
+i.fa-map-marker-alt,
+i.fa-map-marker,
+i.fa-whatsapp,
+i.fa-envelope,
+.flaticon-email11,
+.pxl-item--icon i.fab,
+.pxl-item--icon i.fas,
+.pxl-item--icon i.far {
     color: #dc2626 !important;
+    fill: #dc2626 !important;
 }
 
-/* Background accents (Buttons, Badges, Dividers, Active Tabs) */
-.pxl-button a,
-.btn-primary,
-.elementor-button,
-.pxl-btn,
-.pxl-atc-link a,
-.pxl-header-mobile-default .pxl-nav-mobile-button span,
-.pxl-menu-primary > li.current-menu-item > a::before,
-.pxl-heading .pxl-item--title::after,
-.pxl-divider-inner,
-.pxl-portfolio-filter .active {
+/* 5. Scroll To Top Button (Bottom Right) */
+.pxl-scroll-top,
+#pxl-scroll-top,
+.pxl-scroll-top-wrap,
+.pxl-scroll-top i,
+a.pxl-scroll-top,
+.pxl-scroll-top span {
     background-color: #dc2626 !important;
+    background: #dc2626 !important;
     border-color: #dc2626 !important;
     color: #ffffff !important;
 }
 
-.pxl-button a:hover,
-.btn-primary:hover,
-.elementor-button:hover {
+.pxl-scroll-top:hover,
+#pxl-scroll-top:hover {
     background-color: #b91c1c !important;
-    border-color: #b91c1c !important;
-    color: #ffffff !important;
 }
 
-/* 3. Fix Section Visibility & Text Contrasts */
-/* Remodelaciones integrales, Somos construcción honesta, METODOLOGÍA DE TRABAJO, Counters */
-.pxl-heading, 
-.pxl-heading .pxl-item--title, 
-.pxl-heading .pxl-item--description,
-.pxl-heading .pxl-item--subtitle {
-    opacity: 1 !important;
-    visibility: visible !important;
+/* 6. Universal Orange Color Overrides (Catch-all for any element with orange background/border/color) */
+[style*="background-color: #ff"],
+[style*="background-color:#ff"],
+[style*="background-color: #ea"],
+[style*="background-color:#ea"],
+[style*="background-color: #f5"],
+[style*="background-color:#f5"],
+[style*="background-color: #e5"],
+[style*="background-color:#e5"],
+[style*="background-color: rgb(255"],
+[style*="background-color: rgb(234"],
+[style*="background: #ff"],
+[style*="background: #ea"],
+[style*="background: #f5"] {
+    background-color: #dc2626 !important;
+    background: #dc2626 !important;
 }
 
-/* Counter numbers section fix */
-.pxl-counter, 
-.pxl-counter-number, 
-.pxl-item--number,
-.pxl-counter-title,
-.pxl-item--title {
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-.pxl-counter .pxl-item--number, 
-.pxl-counter-number,
-.elementor-counter .elementor-counter-number-wrapper {
+[style*="color: #ff"],
+[style*="color:#ff"],
+[style*="color: #ea"],
+[style*="color:#ea"],
+[style*="color: #f5"],
+[style*="color:#f5"],
+[style*="color: rgb(255"],
+[style*="color: rgb(234"] {
     color: #dc2626 !important;
+}
+
+/* 7. Ensure clean contrast for all section texts */
+.pxl-heading .pxl-item--title,
+.pxl-heading .pxl-item--description,
+.pxl-counter-number,
+.pxl-item--number {
     opacity: 1 !important;
     visibility: visible !important;
 }
 
-/* Ensure clean contrast for Metodología de Trabajo */
-.elementor-widget-pxl_heading,
-.elementor-widget-pxl_counter,
-.elementor-widget-pxl_icon_box {
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-/* Logo image clean display */
+/* Clean logo display */
 img[src*="logo.png"],
 img[src*="logo"] {
     background: transparent !important;
     filter: none !important;
-    opacity: 1 !important;
-    visibility: visible !important;
 }
