@@ -1,0 +1,126 @@
+/* ==========================================================================
+   CREESTONVIEW - Black & White (Monochrome) Master Theme Overrides
+   ========================================================================== */
+
+:root {
+    --wp--preset--color--black: #000000 !important;
+    --wp--preset--color--white: #ffffff !important;
+    --wp--preset--color--vivid-red: #ffffff !important;
+    --wp--preset--color--luminous-vivid-orange: #ffffff !important;
+    --wp--preset--color--luminous-vivid-amber: #e0e0e0 !important;
+    --wp--preset--color--vivid-cyan-blue: #ffffff !important;
+    --primary-color: #ffffff !important;
+    --secondary-color: #1a1a1a !important;
+    --accent-color: #ffffff !important;
+    --pxl-primary-color: #ffffff !important;
+    --pxl-secondary-color: #111111 !important;
+}
+
+body, html {
+    background-color: #050505 !important;
+    color: #f0f0f0 !important;
+}
+
+/* Black & White Monochromatic Image & Section Filters */
+img, 
+.elementor-background-overlay, 
+.pxl-image-box, 
+.pxl-item--image,
+.pxl-portfolio-item,
+.bg-image,
+sr7-bg,
+.sr7-layer {
+    filter: grayscale(100%) contrast(105%) brightness(95%);
+    transition: filter 0.4s ease, transform 0.4s ease !important;
+}
+
+/* Exempt Logos from grayscale filter so logo stays crisp and visible */
+img[src*="logo"], 
+.pxl-header-logo img,
+.logo-light,
+.logo-dark,
+.logo-mobile img {
+    filter: none !important;
+    background: transparent !important;
+}
+
+/* Text & Heading Monochromatic Overrides */
+h1, h2, h3, h4, h5, h6, 
+.elementor-heading-title, 
+.pxl-item--title, 
+.pxl-heading, 
+.hero-text, 
+p, span, li, a {
+    color: #ffffff !important;
+}
+
+a:hover {
+    color: #cccccc !important;
+}
+
+/* Buttons, Links, Badges in High Contrast Black & White */
+.btn, 
+.pxl-button, 
+.elementor-button, 
+.pxl-btn, 
+button, 
+input[type="submit"] {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn:hover, 
+.pxl-button:hover, 
+.elementor-button:hover, 
+.pxl-btn:hover, 
+button:hover, 
+input[type="submit"]:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+}
+
+/* Navigation & Header Monochromatic Styling */
+header, 
+.pxl-header, 
+.pxl-header-desktop, 
+.pxl-header-mobile, 
+.pxl-header-sticky,
+.elementor-location-header {
+    background-color: #050505 !important;
+    border-bottom: 1px solid #222222 !important;
+}
+
+.pxl-main-menu > li > a {
+    color: #ffffff !important;
+}
+
+.pxl-main-menu > li > a:hover,
+.pxl-main-menu > li.current-menu-item > a {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+/* Footer & Contact Monochromatic Styling */
+footer, 
+.pxl-footer, 
+.elementor-location-footer {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-top: 1px solid #222222 !important;
+}
+
+/* Icon Colors */
+i, .fa, .fab, .far, .fas, .flaticon, [class^="flaticon-"] {
+    color: #ffffff !important;
+}
+
+/* Card & Container Backgrounds */
+.pxl-icon-box, 
+.pxl-service-item, 
+.elementor-widget-container, 
+.pxl-item--inner {
+    border-color: #333333 !important;
+}
