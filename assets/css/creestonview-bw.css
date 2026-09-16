@@ -1,126 +1,114 @@
 /* ==========================================================================
-   CREESTONVIEW - Black & White (Monochrome) Master Theme Overrides
+   CREESTONVIEW - Red & Black Theme Overrides
    ========================================================================== */
 
 :root {
-    --wp--preset--color--black: #000000 !important;
-    --wp--preset--color--white: #ffffff !important;
-    --wp--preset--color--vivid-red: #ffffff !important;
-    --wp--preset--color--luminous-vivid-orange: #ffffff !important;
-    --wp--preset--color--luminous-vivid-amber: #e0e0e0 !important;
-    --wp--preset--color--vivid-cyan-blue: #ffffff !important;
-    --primary-color: #ffffff !important;
-    --secondary-color: #1a1a1a !important;
-    --accent-color: #ffffff !important;
-    --pxl-primary-color: #ffffff !important;
+    --primary-color: #dc2626 !important;
+    --secondary-color: #111111 !important;
+    --accent-color: #dc2626 !important;
+    --pxl-primary-color: #dc2626 !important;
     --pxl-secondary-color: #111111 !important;
+    --wp--preset--color--luminous-vivid-orange: #dc2626 !important;
+    --wp--preset--color--vivid-red: #dc2626 !important;
 }
 
-body, html {
-    background-color: #050505 !important;
-    color: #f0f0f0 !important;
-}
-
-/* Black & White Monochromatic Image & Section Filters */
-img, 
-.elementor-background-overlay, 
-.pxl-image-box, 
-.pxl-item--image,
-.pxl-portfolio-item,
-.bg-image,
-sr7-bg,
-.sr7-layer {
-    filter: grayscale(100%) contrast(105%) brightness(95%);
-    transition: filter 0.4s ease, transform 0.4s ease !important;
-}
-
-/* Exempt Logos from grayscale filter so logo stays crisp and visible */
-img[src*="logo"], 
-.pxl-header-logo img,
-.logo-light,
-.logo-dark,
-.logo-mobile img {
-    filter: none !important;
-    background: transparent !important;
-}
-
-/* Text & Heading Monochromatic Overrides */
-h1, h2, h3, h4, h5, h6, 
-.elementor-heading-title, 
-.pxl-item--title, 
-.pxl-heading, 
-.hero-text, 
-p, span, li, a {
-    color: #ffffff !important;
-}
-
-a:hover {
-    color: #cccccc !important;
-}
-
-/* Buttons, Links, Badges in High Contrast Black & White */
-.btn, 
-.pxl-button, 
-.elementor-button, 
-.pxl-btn, 
-button, 
-input[type="submit"] {
-    background-color: #121212 !important;
-    color: #ffffff !important;
-    border: 1px solid #ffffff !important;
-    transition: all 0.3s ease !important;
-}
-
-.btn:hover, 
-.pxl-button:hover, 
-.elementor-button:hover, 
-.pxl-btn:hover, 
-button:hover, 
-input[type="submit"]:hover {
-    background-color: #ffffff !important;
-    color: #000000 !important;
-    border-color: #ffffff !important;
-}
-
-/* Navigation & Header Monochromatic Styling */
-header, 
-.pxl-header, 
-.pxl-header-desktop, 
-.pxl-header-mobile, 
-.pxl-header-sticky,
-.elementor-location-header {
-    background-color: #050505 !important;
-    border-bottom: 1px solid #222222 !important;
-}
-
-.pxl-main-menu > li > a {
-    color: #ffffff !important;
-}
-
-.pxl-main-menu > li > a:hover,
-.pxl-main-menu > li.current-menu-item > a {
-    color: #ffffff !important;
-    text-decoration: underline !important;
-}
-
-/* Footer & Contact Monochromatic Styling */
-footer, 
-.pxl-footer, 
-.elementor-location-footer {
+/* 1. Logo background box fix: Change orange box to BLACK */
+.pxl-header-branding,
+.pxl-header-branding a,
+.pxl-logo-mobile,
+.pxl-logo-mobile a,
+.pxl-header-branding-bg,
+.pxl-header-mobile-default .pxl-header-branding,
+div[class*="branding"] {
     background-color: #000000 !important;
-    color: #ffffff !important;
-    border-top: 1px solid #222222 !important;
+    background: #000000 !important;
 }
 
-/* Icon Colors */
-i, .fa, .fab, .far, .fas, .flaticon, [class^="flaticon-"] {
+/* 2. Replace all orange accents with Red (#dc2626) */
+a:hover,
+.pxl-primary-color,
+.text-primary,
+.pxl-item--icon i,
+.pxl-icon-box .pxl-item--icon i,
+.flaticon,
+[class*="flaticon-"],
+.fa-whatsapp,
+.elementor-icon i,
+.pxl-heading .pxl-item--subtitle,
+.pxl-heading .pxl-item--title span.pxl-primary-color,
+.pxl-counter-number,
+.pxl-item--number,
+.counter-number,
+.pxl-counter .pxl-item--number span,
+.pxl-counter-number span {
+    color: #dc2626 !important;
+}
+
+/* Background accents (Buttons, Badges, Dividers, Active Tabs) */
+.pxl-button a,
+.btn-primary,
+.elementor-button,
+.pxl-btn,
+.pxl-atc-link a,
+.pxl-header-mobile-default .pxl-nav-mobile-button span,
+.pxl-menu-primary > li.current-menu-item > a::before,
+.pxl-heading .pxl-item--title::after,
+.pxl-divider-inner,
+.pxl-portfolio-filter .active {
+    background-color: #dc2626 !important;
+    border-color: #dc2626 !important;
     color: #ffffff !important;
 }
 
-/* Card & Container Backgrounds */
-.pxl-icon-box, 
-.pxl-service-item, 
-.elementor-widget-container, 
-.pxl-item--inner {
-    border-color: #333333 !important;
+.pxl-button a:hover,
+.btn-primary:hover,
+.elementor-button:hover {
+    background-color: #b91c1c !important;
+    border-color: #b91c1c !important;
+    color: #ffffff !important;
+}
+
+/* 3. Fix Section Visibility & Text Contrasts */
+/* Remodelaciones integrales, Somos construcción honesta, METODOLOGÍA DE TRABAJO, Counters */
+.pxl-heading, 
+.pxl-heading .pxl-item--title, 
+.pxl-heading .pxl-item--description,
+.pxl-heading .pxl-item--subtitle {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Counter numbers section fix */
+.pxl-counter, 
+.pxl-counter-number, 
+.pxl-item--number,
+.pxl-counter-title,
+.pxl-item--title {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.pxl-counter .pxl-item--number, 
+.pxl-counter-number,
+.elementor-counter .elementor-counter-number-wrapper {
+    color: #dc2626 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Ensure clean contrast for Metodología de Trabajo */
+.elementor-widget-pxl_heading,
+.elementor-widget-pxl_counter,
+.elementor-widget-pxl_icon_box {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Logo image clean display */
+img[src*="logo.png"],
+img[src*="logo"] {
+    background: transparent !important;
+    filter: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
