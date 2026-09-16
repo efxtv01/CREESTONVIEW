@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CREESTONVIEW - Master Red & Black Overrides & Orange Removal
+   CREESTONVIEW - MASTER OVERRIDES & ORANGE ELIMINATION
    ========================================================================== */
 
 :root {
@@ -71,7 +71,7 @@ a[href*="mailto"]:hover {
     color: #ffffff !important;
 }
 
-/* 4. Fondo de las imágenes en carrusel: Fondo Oscuro (#111111) en lugar de Naranja */
+/* 4. Fondo del Carrusel de imágenes: Fondo Oscuro (#111111) */
 .categoria-proyectos,
 .pxl-tabs5,
 .pxl-tabs5 .pxl-tabs--content,
@@ -97,7 +97,7 @@ div[class*="pxl-tabs"],
     background: #111111 !important;
 }
 
-/* 5. Iconos de dirección en pie de página (Ubicación, WhatsApp, Email): Color Rojo (#dc2626) */
+/* 5. Iconos de dirección en pie de página (Pin, WhatsApp, Email): Rojo (#dc2626) */
 .pxl-icon-box .pxl-item--icon,
 .pxl-icon-box .pxl-item--icon i,
 .pxl-icon-box i,
@@ -120,24 +120,32 @@ footer i,
     fill: #dc2626 !important;
 }
 
-/* 6. Efecto del ratón (Cursor follower circle): Círculo Semitransparente Rojo */
-.pxl-cursor,
+/* 6. EFECTO DEL RATÓN (CURSOR): Círculo Semitransparente Rojo Perfecto */
 #pxl-cursor,
+.pxl-cursor,
+.pxl-js-cursor,
+.pxl-cursor-wrapper {
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
 .pxl-cursor--follower,
 .pxl-js-follower,
-.pxl-cursor-follower,
-.pxl-cursor-pointer,
-.pxl-cursor-wrapper,
-div[class*="pxl-cursor"] {
-    background-color: rgba(220, 38, 38, 0.35) !important;
-    border-color: rgba(220, 38, 38, 0.7) !important;
+.pxl-cursor-follower {
+    border-radius: 50% !important;
+    background-color: rgba(220, 38, 38, 0.4) !important;
+    border: 1px solid rgba(220, 38, 38, 0.7) !important;
+    box-shadow: none !important;
 }
 
 .pxl-cursor--follower.active,
 .pxl-cursor.active,
 .pxl-cursor--cta {
+    border-radius: 50% !important;
     background-color: rgba(220, 38, 38, 0.5) !important;
-    border-color: #dc2626 !important;
+    border: 1px solid #dc2626 !important;
 }
 
 /* 7. Scroll To Top Button (Botón Flotante) */
@@ -158,7 +166,7 @@ a.pxl-scroll-top,
     background-color: #b91c1c !important;
 }
 
-/* 8. Reglas de captura general para cualquier fondo o texto naranja restante */
+/* 8. Reglas de captura general para cualquier fondo o texto naranja */
 [style*="background-color: rgb(255, 105, 0)"],
 [style*="background-color: rgb(255, 94, 21)"],
 [style*="background-color: rgb(245, 91, 20)"],
