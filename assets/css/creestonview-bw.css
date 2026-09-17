@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CREESTONVIEW - MASTER OVERRIDES & ORANGE ELIMINATION
+   CREESTONVIEW - MASTER OVERRIDES & GALLERY LINK BLOCKING
    ========================================================================== */
 
 :root {
@@ -71,7 +71,10 @@ a[href*="mailto"]:hover {
     color: #ffffff !important;
 }
 
-/* 4. Fondo del Carrusel de imágenes: Fondo Oscuro (#111111) */
+/* 4. Fondo del Carrusel de imágenes (Franja ancha): Fondo Oscuro (#111111) */
+.elementor-element-cf67c2d,
+.elementor-element-cf67c2d > .elementor-widget-wrap,
+.elementor-element-cf67c2d > .elementor-element-populated,
 .categoria-proyectos,
 .pxl-tabs5,
 .pxl-tabs5 .pxl-tabs--content,
@@ -140,15 +143,27 @@ footer i,
     box-shadow: none !important;
 }
 
-.pxl-cursor--follower.active,
-.pxl-cursor.active,
-.pxl-cursor--cta {
+.pxl-cursor--cta,
+.pxl-cursor--cta.style-box {
     border-radius: 50% !important;
-    background-color: rgba(220, 38, 38, 0.5) !important;
+    background-color: rgba(220, 38, 38, 0.35) !important;
     border: 1px solid #dc2626 !important;
+    box-shadow: none !important;
 }
 
-/* 7. Scroll To Top Button (Botón Flotante) */
+/* 7. DESACTIVAR Y BLOQUEAR LINKS EN LA GALERÍA DE IMÁGENES DE PROYECTOS REALIZADOS */
+.pxl-swiper-slide .pxl-post--inner a,
+.pxl-post--inner .pxl-post--category a,
+.pxl-post--inner .pxl-post--title a,
+.pxl-post--inner .btn-readmore a,
+.pxl-post--category a,
+.pxl-post--title a,
+.btn-readmore a {
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+/* 8. Scroll To Top Button */
 .pxl-scroll-top,
 #pxl-scroll-top,
 .pxl-scroll-top-wrap,
@@ -166,15 +181,15 @@ a.pxl-scroll-top,
     background-color: #b91c1c !important;
 }
 
-/* 8. Reglas de captura general para cualquier fondo o texto naranja */
+/* 9. Reglas de captura general para cualquier fondo o texto naranja */
 [style*="background-color: rgb(255, 105, 0)"],
 [style*="background-color: rgb(255, 94, 21)"],
 [style*="background-color: rgb(245, 91, 20)"],
 [style*="background-color: rgb(234, 87, 3)"],
-[style*="background-color: #dc2626"],
-[style*="background-color: #dc2626"],
-[style*="background-color: #dc2626"],
-[style*="background-color: #dc2626"],
+[style*="background-color: #ff6900"],
+[style*="background-color: #ff5e15"],
+[style*="background-color: #f55b14"],
+[style*="background-color: #ea5703"],
 [style*="background-color: #e55715"] {
     background-color: #111111 !important;
 }
@@ -183,10 +198,10 @@ a.pxl-scroll-top,
 [style*="color: rgb(255, 94, 21)"],
 [style*="color: rgb(245, 91, 20)"],
 [style*="color: rgb(234, 87, 3)"],
-[style*="color: #dc2626"],
-[style*="color: #dc2626"],
-[style*="color: #dc2626"],
-[style*="color: #dc2626"],
+[style*="color: #ff6900"],
+[style*="color: #ff5e15"],
+[style*="color: #f55b14"],
+[style*="color: #ea5703"],
 [style*="color: #e55715"] {
     color: #dc2626 !important;
 }
