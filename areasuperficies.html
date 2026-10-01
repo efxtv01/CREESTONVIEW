@@ -444,6 +444,67 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 </style>
 
+
+<style id="creestonview-fix-cotizar-buttons">
+/* Fix Cotizar Ahora buttons on Mobile and Desktop */
+.pxl-button,
+.pxl-button a,
+.pxl-atc-link,
+.pxl-atc-link a,
+.elementor-widget-pxl_button,
+.elementor-widget-pxl_button a,
+.pxl-button .btn,
+.btn-default.inline {
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 42px !important;
+    border-radius: 8px !important;
+    padding: 10px 22px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+    background-color: #dc2626 !important;
+    border: none !important;
+}
+
+.pxl--btn-text {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+}
+
+@media (max-width: 991px) {
+    .pxl-button a,
+    .elementor-widget-pxl_button a,
+    .pxl-atc-link a {
+        padding: 8px 16px !important;
+        font-size: 13px !important;
+        min-height: 38px !important;
+        border-radius: 6px !important;
+        background-color: #dc2626 !important;
+        display: inline-flex !important;
+    }
+    
+    .pxl--btn-text {
+        font-size: 13px !important;
+        display: inline-block !important;
+        color: #ffffff !important;
+    }
+}
+</style>
+
 </head>
 <body data-rsssl=1 class="home wp-singular page-template-default page page-id-75 wp-custom-logo wp-theme-graviton   pxl-redux-page  body-default-font   heading-default-font   bd-px-header--default  woocommerce-layout-grid elementor-default elementor-kit-7 elementor-page elementor-page-75">
     <meta name="google-site-verification" content="jCrrlKY7Mk-mnxPlcARYR310Hf2-jQqv54UOovp0ftg" />
